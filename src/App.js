@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import Calculator from './components/Calculator';
+import React from 'react';
+
+
+const {useState} = React;
 
 function App() {
+
+  const [num1 , setNum1] = useState("");
+  const [num2, setNum2] = useState("");
+  const [operation, setOperation] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div >
+        <Calculator 
+        num1 = {num1}
+        setNum1 = {setNum1}
+        num2 = {num2}
+        setNum2={setNum2}
+        operation = {operation}
+        setOperation = {setOperation}
+        message = {message}
+        setMessage ={setMessage}
+        ></Calculator>
+      </div>
     </div>
   );
 }

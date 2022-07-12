@@ -1,5 +1,14 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: auto;
+}
+
+.canvaCal{
+  background-color: #282c34;
+  width: 120px;
 }
 
 .App-logo {
@@ -36,3 +45,91 @@
     transform: rotate(360deg);
   }
 }
+
+
+button {
+  height: 80px;
+  font-size: 2rem!important;
+  text-align: center;
+  place-items: center;
+
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+.operadores{
+  display: flex;
+  flex-direction: column;
+}
+
+.operadores button{
+  flex: 1 1 1%;
+  max-width: auto;
+  font-weight: 700;
+}
+
+
+.numeros{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numeros button{
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  
+}
+
+.pantalla {
+  width: 100%;
+  height: auto;
+  background-color: #252525;
+  color:white;
+  text-align: right;
+  padding:16px;
+  font-size: 2.1rem;
+}
+
+.pantalla span{
+  font-size: 14px;
+}
+
+.superior{
+  display: flex;
+  justify-content: space-between;
+
+}
+.calculadora {
+  width: 100%;
+  max-width: 400px;
+  background-color: #282c34;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.mensaje{
+  width: 100%;
+  max-width: 400px;
+  background-color: pink;
+  border-radius: 16px;
+  border-width: medium;
+  border-color: red;
+  overflow: hidden;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1rem!important;
+  font-family: 'Courier New', Courier, monospace;
+}
+.calculadora-botones {
+  display: flex;
+}
+
